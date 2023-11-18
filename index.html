@@ -4,7 +4,126 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <nav class="header__menu">
+        <ul class="heder__link-list">
+          <li class="heder__link-list-item">
+            <a class="header__link-active" href="#0">главная</a>
+          </li>
+          <li class="heder__link-list-item">
+            <a class="header__link" href="#0">посмотреть лоты</a>
+          </li>
+          <li class="heder__link-list-item">
+            <a class="header__link" href="#0">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__logo">
+        <a href="#0"
+          ><img
+            class="header__logo-image"
+            alt="Логотип"
+            src="./images/logo-black.svg"
+        /></a>
+      </div>
+      <address class="header__address">
+        <a class="header__address-link" href="+9 999 555 5555"
+          >+9 999 555 5555</a
+        ><br />
+        <a class="header__address-link" href="info@sobaka.ge">info@sobaka.ge</a
+        ><br />
+        наб. Принсенграхт 263-265,<br />
+        Амстердам
+      </address>
+    </header>
+    <div class="cover">
+      <div class="overlay">
+        <h1 class="cover__title">
+          <span class="aligned-text"
+            >О<span class="title-text-letter-spacing">но</span></span
+          >
+          <span class="aligned-text_center"
+            >Те<span class="title-text-letter-spacing">бе</span></span
+          >
+          <span class="aligned-text_right"
+            ><span class="title-text-letter-spacing">Н</span>ад<span
+              class="no-letter-spacing"
+              >о</span
+            ></span
+          >
+        </h1>
+        <div class="cover__description">
+          <h2 class="cover__description-text">
+            аукцион вещей, в которые никто не верил
+          </h2>
+          <button class="bet-button">сделать ставку</button>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="lots">
+        <h2 class="lots-title">Лоты</h2>
+        <ul class="lots-list">
+          <li class="lots-list-item lots-article-backgound-first">
+            <article class="lots-article overlay">
+              <h3 class="lots-article-title">
+                Фильм режиссёра, который бросил киношколу
+              </h3>
+              <p class="lots-article-text">
+                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+              </p>
+            </article>
+          </li>
+          <li class="lots-list-item lots-article-backgound-second">
+            <article class="lots-article overlay">
+              <h3 class="lots-article-title">
+                Книга, где описан один скучный день из жизни рекламного агента
+              </h3>
+              <p class="lots-article-text">
+                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
+                переходами на древнеанглийский. В ней одновременно
+                рассказывается о 16 июня 1904 года и об истории литературы,
+                начиная с античных времён. И это всё накладывается на эпическую
+                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
+                Джойса?
+              </p>
+            </article>
+          </li>
+          <li class="lots-list-item lots-article-backgound-third">
+            <article class="lots-article overlay">
+              <h3 class="lots-article-title">
+                Картина, которую повторит даже 5-летний сын маминой подруги
+              </h3>
+              <p class="lots-article-text">
+                Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                котиков… Сколько бы вы на такое поставили, если бы не знали, что
+                это — одна из революционных работ Кандинского?
+              </p>
+            </article>
+          </li>
+        </ul>
+        <a class="lots-link" href="#0">посмотреть больше</a>
+      </div>
+      <div class="about">
+        <div class="about__logo">
+          <img
+            class="about__logo-image"
+            src="/images/logo-white.svg"
+            alt="Логотип"
+          />
+        </div>
+        <div class="about__title">Заголовок</div>
+        <div slass="about__text">Текст</div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+  </body>
 </html>
