@@ -32,16 +32,21 @@ body {
   padding-left: 2px;
 }
 
-.heder__link-list {
+.header__link-list {
   display: flex;
   gap: 32px;
   padding-bottom: 2px;
   list-style: circle;
 }
 
-.heder__link-list-item {
-  text-decoration: none;
+.header__link-list-item-main {
+  list-style-type: none;
   list-style: none;
+  text-decoration: none;
+}
+
+.header__link-list-item {
+  text-decoration: none;
 }
 
 .header__link {
@@ -228,7 +233,6 @@ body {
   line-height: 120%;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
-  /* text-underline-position: under; */
   text-underline-offset: 3px;
   text-transform: uppercase;
 }
@@ -249,17 +253,99 @@ body {
 }
 
 .about {
-  padding: 181px 50px 180px;
-  display: grid;
-  grid-template-columns: 95px 240px 120px auto;
-  grid-template-rows: 100px 40px 100px auto;
-  grid-template-areas:
-    ". about__logo .."
-    ". about__logo . about__title"
-    ".. about__text";
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  height: 487px;
 }
 
-.about__logo {
+.about__logo-column {
+  display: grid;
+  grid-template-columns: 95px 240px 95px;
+  grid-template-rows: 240px;
+}
+
+.about__logo-position {
+  display: flex;
+  grid-column: 2/3;
   background-color: #000;
   border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 25px;
+}
+
+.about__title {
+  padding-bottom: 74px;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+.about__text {
+  font-size: 20px;
+  line-height: normal;
+}
+
+.footer {
+  padding: 181px 50px 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__address {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px; /* 135% */
+}
+
+.footer__address-link {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
+
+.footer__menu {
+  display: flex;
+}
+
+.footer__link-list {
+  list-style: none;
+}
+
+.footer__link-list-item {
+}
+
+.footer__link {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: normal;
+  text-align: center;
+}
+
+.footer__link-no-active {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
+
+.socials {
+  max-width: 240px;
+  max-height: 48px;
+  display: flex;
+  list-style: none;
+  gap: 48px;
 }
