@@ -66,10 +66,10 @@
 }
 
 .cover {
+  box-sizing: content-box;
   width: 100%;
-  padding-top: 13px;
   color: #fff;
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -80,8 +80,7 @@
   z-index: 0;
   width: 100%;
   max-width: 1440px;
-  height: 100%;
-  min-height: 756px;
+  height: calc(100% + 42px);
   background-color: rgb(0 0 0 /0.6);
 }
 
@@ -91,7 +90,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 152px 50px 0;
+  padding: 165px 50px 0;
   font-weight: 700;
   font-size: 100px;
   font-style: normal;
@@ -132,7 +131,6 @@
   justify-content: flex-end;
   align-content: flex-end;
   gap: 81px;
-  box-sizing: border-box;
   width: 100%;
   padding: 135px 50px 50px;
 }
@@ -206,15 +204,15 @@
 }
 
 .lots-article-backgound-film {
-  background-image: url(/images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .lots-article-backgound-book {
-  background-image: url(/images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .lots-article-backgound-picture {
-  background-image: url(/images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .lots-article-title {
@@ -226,10 +224,6 @@
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
   text-transform: uppercase;
-}
-
-.lots-article-text {
-  display: inline-block;
 }
 
 .lots-link {
@@ -246,7 +240,6 @@
   display: flex;
   justify-content: space-between;
   gap: 25px;
-  min-height: 487px;
   padding: 0 50px;
 }
 
