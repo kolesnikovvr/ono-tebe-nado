@@ -66,6 +66,7 @@
 }
 
 .cover {
+  position: relative;
   width: 100%;
   color: #fff;
   background-image: url(../images/cover.jpg);
@@ -76,10 +77,10 @@
 
 .overlay-cover {
   position: absolute;
+  inset: 0;
   z-index: 0;
   width: 100%;
   max-width: 1440px;
-  height: calc(100% + 42px);
   background-color: rgb(0 0 0 /0.6);
 }
 
