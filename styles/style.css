@@ -1,7 +1,6 @@
 .header {
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
   padding: 92px 49px 91px;
   color: #000;
   font-size: 18px;
@@ -75,12 +74,10 @@
   background-size: cover;
 }
 
-.overlay-cover {
+.overlay {
   position: absolute;
   inset: 0;
   z-index: 0;
-  width: 100%;
-  max-width: 1440px;
   background-color: rgb(0 0 0 /0.6);
 }
 
@@ -188,6 +185,7 @@
 }
 
 .lots-article {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -216,6 +214,8 @@
 }
 
 .lots-article-title {
+  position: relative;
+  z-index: 1;
   color: #fff;
   font-weight: 700;
   font-size: 22px;
@@ -226,11 +226,14 @@
   text-transform: uppercase;
 }
 
+.lots-article-text {
+  position: relative;
+  z-index: 1;
+}
+
 .lots-link {
   display: block;
   margin: 30px 0 0 40px;
-  color: #000;
-  font-family: Raleway;
   font-size: 20px;
   text-decoration-thickness: 1px;
   text-underline-offset: 5px;
@@ -271,6 +274,7 @@
 }
 
 .about__title {
+  padding-top: 100px;
   padding-bottom: 74px;
   font-size: 40px;
   line-height: normal;
